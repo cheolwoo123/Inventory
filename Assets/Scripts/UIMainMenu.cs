@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class UIMainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+   
+    public void OpenMainMenu()
     {
-        
+        UIManager.Instance.MainMenu();
+      
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OpenInventory()
     {
-        
+      UIManager.Instance.Inventory();
+    }
+
+    public void OpenStatus()
+    {
+        UIManager.Instance.Status();
     }
 }
