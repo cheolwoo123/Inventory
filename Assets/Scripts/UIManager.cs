@@ -14,9 +14,11 @@ public class UIManager : MonoBehaviour
     private UIInventory uiInventory;
     [SerializeField]
     private UIStatus uiStatus;
+    public UIMainMenu _uiMainMenu => uiMainMenu;
+    public UIInventory _uiInventory => uiInventory;
+    public UIStatus _uiStatus => uiStatus;
 
 
-     
 
     public void Awake()
     {
@@ -31,19 +33,19 @@ public class UIManager : MonoBehaviour
 
     }
 
-  public void MainMenu()
+  public void OpenMainMenu()
     {
         uiMainMenu.gameObject.SetActive(true);
         uiInventory.gameObject.SetActive(false);
         uiStatus.gameObject.SetActive(false);
     }
-    public void Inventory()
+    public void OpenInventory()
     {
         uiMainMenu.gameObject.SetActive(false);
         uiInventory.gameObject.SetActive(true);
         uiStatus.gameObject.SetActive(false);
     }
-    public void Status()
+    public void OpenStatus()
     {
         uiMainMenu.gameObject.SetActive(false);
         uiInventory.gameObject.SetActive(false);

@@ -4,7 +4,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; set; }
-    public Character playerCharacter;
+
+    [SerializeField]
+    public Character playerCharacter{get; private set; }
 
     private void Awake()
     {
@@ -17,10 +19,14 @@ public class GameManager : MonoBehaviour
                      
         Instance = this;
         DontDestroyOnLoad(this);
-
-    playerCharacter = new Character("公流", 50,30,100,25);
+        SetData();
 
     }
-
+    public void SetData()
+    {
+    playerCharacter = new Character("公流", 100,25,15,25);
+        UIManager.Instance._uiStatus.SetCharacterInfo(playerCharacter);
+        UIManager.Instance._uiMainMenu.CharacterInfo(playerCharacter);
+    }
 
 }

@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    public string name;
-    public int hp;
-    public int attack;
-    public int critical;
-    public int defense;
+    public string name{ get; private set; }
+    public int hp { get; private set; }
+    public int attack { get; private set; }
+    public int defense{ get; private set; }    
+    public int critical { get; private set; }
 
     public  Character(string _name, int _hp, int _attack, int _critical,int _defense )
     {
         name = _name;
         hp = _hp;
         attack = _attack;
-        critical = _critical;
         defense = _defense;
+        critical = _critical;
 
     }
 
