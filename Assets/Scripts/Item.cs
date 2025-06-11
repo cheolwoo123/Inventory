@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 [System.Serializable]
-public class Item : MonoBehaviour
+public class Item 
 {
 
-    public string name;
-    public Sprite icon;
+    public string name { get; private set; }
+    public Sprite icon { get; private set; }
 
-    public void Itme(string _name, Sprite _icon) {
-
+    public Item(string _name, Sprite _icon)
+    {
         name = _name;
         icon = _icon;
     }
+    
   
 }

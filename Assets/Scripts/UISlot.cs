@@ -11,6 +11,7 @@ public class UISlot : MonoBehaviour
     public void SetItem(Item item)
     {
         curentItem = item;
+        Debug.Log(curentItem.name);
         RefreshUI();
     }
     public void RefreshUI()
@@ -19,11 +20,13 @@ public class UISlot : MonoBehaviour
         {
             image.sprite = curentItem.icon;
             image.color = Color.white;
+            
         }
         else
         {
             image.sprite = null;
             image.color = new Color(1, 1, 1, 0);
+            
         }
     }
 

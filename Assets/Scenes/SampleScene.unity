@@ -3922,7 +3922,7 @@ GameObject:
   - component: {fileID: 1234633246}
   - component: {fileID: 1234633245}
   m_Layer: 0
-  m_Name: Base
+  m_Name: UIBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4368,7 +4368,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1460244087}
   - component: {fileID: 1460244086}
-  - component: {fileID: 1460244085}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -4376,18 +4375,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1460244085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460244081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7815deba171f78f4b9950c9222ea3c1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1460244086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5575,6 +5562,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backButton: {fileID: 273032806}
+  slots: {fileID: 3105407166685278017, guid: 6a1fcf62513505749b86be4a196b6882, type: 3}
+  slotP: {fileID: 836938941}
 --- !u!1 &1909674515
 GameObject:
   m_ObjectHideFlags: 0
