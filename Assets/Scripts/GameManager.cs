@@ -28,10 +28,10 @@ public class GameManager : MonoBehaviour
 
         
         Sprite swordIcon = Resources.Load<Sprite>("Image/Sword");
-        Item sword = new Item("∞≠√∂ ∞À", swordIcon); 
+        Item sword = new Item("∞≠√∂ ∞À", swordIcon,10); 
 
         Sprite defenseIcon = Resources.Load<Sprite>("Image/Defense");
-        Item defense = new Item("πÊ∆–", defenseIcon);  
+        Item defense = new Item("πÊ∆–", defenseIcon,0,10,10,10);  
 
 
        

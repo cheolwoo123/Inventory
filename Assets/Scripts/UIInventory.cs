@@ -45,7 +45,11 @@ public class UIInventory : MonoBehaviour
 
     }
 
-
+    public void RefreshAllSlots()
+    {
+        foreach (var slot in slotList)
+            slot.RefreshUI();
+    }
 
 
 }
